@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+}
+.nav-head-part{
+    height: 100vh;
+    width: 100%;
+    background-image: url("bus-1.jpg");
+    background-position: center;
+   filter: brightness(100px);
+}
+.nav-part{
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(50px);
+    gap: 900px;
+    .logo-img{
+        height:45px;
+        width: 50px;
+    }
+    li{
+        list-style: none;
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 900;
+    transition: 0.5s ease;
+    }
+    .phone{
+        background-color:rgb(26, 249, 26);
+        padding: 5px 5px;
+        border-radius: 5px;
+
+    }
+    header{
+        height: 45px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgba(26, 249, 26, 0.767);
+        box-shadow: 1px 1px 2px 2px white inset;
+        border-radius: 50%;
+    }
+}
+.booking-container-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 10vh; */
+    padding: 30px;
+   
+}
+ .booking-container{
+    height: 500px;
+    width: 500px;
+    background-color:rgba(255, 255, 255, 0.301);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white, 0px 0px  20px white ,0px 0px 30px white;
+}
+.bookig-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    h1{
+        color: rgba(26, 249, 26, 0.947);
+        font-family: "Tilt Neon", sans-serif;
+        font-size: 2rem;
+    }
+}
+.lable{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 57%;
+    h3{
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.3rem;
+    }
+}
+.input-feiled{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    .number{
+        width:350px;
+        height: 40px;
+    }
+}
+.lable-1{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 52%;
+    h3{
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.3rem;
+    }
+}
+.input-feiled-submit{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 30vh;
+    .submit{
+        width:360px;
+        height: 50px;
+        font-size:16px;
+        font-family: "Space Grotesk", sans-serif;
+        color:white;
+        background-color:rgba(26, 249, 26, 0.86) ;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 0.6s ease-in-out;
+    }
+}
+.submit:hover{
+    transform: scale(0.8);
+}
+.booking-footer{
+   height: 8vh;
+   display: grid;
+   grid-template-columns:auto auto auto ;
+   grid-template-rows:200px auto 200px;
+   grid-template-areas: "nav nav aside" 
+
+   
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    gap: 20px;
+    a{
+        color: white;
+    }
+}
+aside{
+    grid-area: aside;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    justify-content: space-between;
+    p{
+        color: white;
+    }
+}

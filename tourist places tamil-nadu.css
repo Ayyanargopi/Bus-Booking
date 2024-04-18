@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+}
+.nav-head-part{
+    height: 200vh;
+    width: 100%;
+    background-color:black;
+}
+.nav-part{
+    display: flex;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    align-items: center;
+    /* padding: 10px 5%; */
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.27);
+    /* backdrop-filter: blur(50px); */
+    .logo-img{
+        height:45px;
+        width: 50px;
+        /* animation: flip linear 2s infinite; */
+    }
+    li{
+        list-style: none;
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 900;
+        transition: 0.5s ease;
+        padding: 25px;/
+    }
+    a:hover{
+        color:rgb(26, 249, 26);
+    }
+    header{
+        height: 45px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:rgba(26, 249, 26, 0.767);
+        box-shadow: 1px 1px 2px 2px white inset;
+        border-radius: 50%;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        font-family: "Space Grotesk", sans-serif;
+        border-radius: 5px;
+        border: none;
+        font-weight: 800;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px 2px white inset;
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        color:white;
+        animation:btn 0.1s linear alternate infinite;
+        transition: 2s ease;
+    }
+    button:hover{
+        background: rgb(26, 249, 26);
+        animation: btn-2 1s linear alternate infinite;
+    }
+}
+@keyframes btn {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(3deg);
+    }
+}
+@keyframes btn-2 {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+@keyframes flip {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+.Tamilnadu-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    h1{
+        color: transparent; 
+        background-clip: text;
+        /* background-image: linear-gradient(90deg, #d53369 0%, #edb439 100%); */
+        background-image: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+        font-family: "Tilt Neon", sans-serif;
+        font-size:3rem;
+    }
+}
+.place-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 150px;
+ }
+ .img-box{
+     height: 400px;
+     width: 300px;
+     border-radius: 10px;
+     box-shadow: 2px 2px 10px 10px white inset;
+}
+.image-part-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.image1{
+     height: 200px;
+     width: 240px;
+     border: 1px solid;
+     border-radius: 10px;
+     position: relative;
+     top: 20px;
+}
+.image-text-part-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 65%;
+    h2{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        color: white;
+    }
+}
+.image-text-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 78%;
+    h2{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        color: white;
+    }
+}
+.image-text-part-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 91%;
+    h2{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        color: white;
+    }
+}
+.image-text-part-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 77%;
+    h2{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        color: white;
+    }
+}
+.image-text-part-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 73%;
+    h2{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        color: white;
+    }
+}
+.image-text-part-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11vh;
+    width: 82%;
+    h2{
+        font-family: "Ubuntu", sans-serif;
+        font-size: 17px;
+        color: white;
+    }
+}
+.para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-family: "DM Serif Display", serif;
+        color: white;
+        width: 80%;
+        font-size: 13px;
+        text-align: justify;
+    }
+}
+.image1{
+    img{
+        height: 200px;
+        width: 240px;
+        border-radius: 10px;
+        transition: 1s linear;
+    }
+}
+img:hover{
+    transform: scaleX(1.1);
+    cursor: pointer;
+}
+.note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    p{
+        color: white;
+        font-family: "DM Serif Display", serif;
+        font-size:30px;
+    }
+}
